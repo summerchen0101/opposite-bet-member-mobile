@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const EventDetail: React.FC = () => {
   return (
     <>
-      <Header>赛事详情</Header>
+      <Header title="赛事详情" />
       <div className="main-content">
         {/* 公告 */}
         <div className="notice-section d-flex align-items-center">

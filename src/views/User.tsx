@@ -6,7 +6,7 @@ const User: React.FC = () => {
   const history = useHistory();
   return (
     <>
-      <Header>我的</Header>
+      <Header title="我的" />
       <div className="main-content">
         {/* 個人資訊 */}
         <div className="top-section">
@@ -57,6 +57,7 @@ const User: React.FC = () => {
             <li
               className="menu-list-item"
               // onClick="location.href = 'recharge.html'"
+              onClick={(e) => history.push("/deposit")}
             >
               <img src="images/ic_recharge.svg" />
               立即充值

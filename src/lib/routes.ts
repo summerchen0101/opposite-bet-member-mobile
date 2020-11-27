@@ -10,6 +10,10 @@ import MessageDetail from "../views/MessageDetail";
 import Help from "../views/Help";
 import HelpDetail from "../views/HelpDetail";
 import About from "../views/About";
+import Deposit from "../views/Deposit";
+import DepositPayment from "../views/DepositPayment";
+import DepositRecord from "../views/DepositRecord";
+import DepositRecordDetail from "../views/DepositRecordDetail";
 interface Route {
   path: string;
   auth?: boolean;
@@ -28,4 +32,8 @@ export const routes: Route[] = [
   { path: "/help", component: Help },
   { path: "/help-detail", component: HelpDetail },
   { path: "/about", component: About },
+  { path: "/deposit", component: Deposit },
+  { path: "/deposit-payment", component: DepositPayment },
+  { path: "/deposit-record", component: DepositRecord },
+  { path: "/deposit-record-detail", component: DepositRecordDetail },
 ];

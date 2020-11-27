@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const PointHistory: React.FC = () => {
   return (
     <>
-      <Header>帐务历史</Header>
+      <Header title="帐务历史" />
       <div className="main-content">
         <ul
           className="nav nav-tabs d-flex justify-content-between section-padding"

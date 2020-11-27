@@ -1,9 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Link } from "react-router-dom";
 interface HeaderProps {
   backRoute?: string;
+  title: JSX.Element | string;
 }
-const Header: React.FC<HeaderProps> = ({ children, backRoute }) => {
+const Header: React.FC<HeaderProps> = ({ children, backRoute, title }) => {
   return (
     <nav className="main_nav">
       <div className="nav-bar">
@@ -13,12 +14,12 @@ const Header: React.FC<HeaderProps> = ({ children, backRoute }) => {
           </Link>
         )}
 
-        <div className="nav-title">{children}</div>
-        {/* <div class="nav-title">市场列表</div> */}
+        <div className="nav-title">{title}</div>
         {/* <div class="right-item"><a class="s-btn">删除</a><a class="s-btn">取消</a></div> */}
         <div className="right-item">
-          <i className="iconfont iconmessage" />
-          <span className="red-dot" />
+          {/* <i className="iconfont iconmessage" />
+          <span className="red-dot" /> */}
+          {children}
         </div>
       </div>
     </nav>

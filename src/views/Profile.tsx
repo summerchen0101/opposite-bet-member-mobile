@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const Profile: React.FC = () => {
   return (
     <>
-      <Header>个人资料</Header>
+      <Header title="个人资料" />
       <div className="main-content background-gray">
         <ul className="list-group col-list">
           <li className="thead col-list-item section-padding pointer">

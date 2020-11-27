@@ -4,9 +4,9 @@ import Header from "../components/Header";
 const HomePage: React.FC = () => {
   return (
     <>
-      <Header>
-        <img className="logo" alt="logo" src="images/logo.png" />
-      </Header>
+      <Header
+        title={<img className="logo" alt="logo" src="images/logo.png" />}
+      />
       <div className="main-content">
         {/* 輪撥BANNER */}
         <div className="banner-section">

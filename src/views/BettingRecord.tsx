@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const BettingHistory: React.FC = () => {
   return (
     <>
-      <Header>交易明細</Header>
+      <Header title="交易明細" />
       <div className="pintop-section d-flex flex-column justify-content-center fixed">
         <ul className="acc-inner mt-1">
           <li className="acc-item px-5">

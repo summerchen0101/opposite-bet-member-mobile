@@ -6,7 +6,7 @@ const Events: React.FC = () => {
   const history = useHistory();
   return (
     <>
-      <Header>市场列表</Header>
+      <Header title="市场列表" />
       <div className="main-content">
         {/* 公告 */}
         <div className="notice-section d-flex align-items-center">
