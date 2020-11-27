@@ -120,14 +120,17 @@ const User: React.FC = () => {
             </li>
             <li
               className="menu-list-item"
-              // onClick="location.href = 'about.html'"
+              onClick={(e) => history.push("/about")}
             >
               <img src="images/ic_about.svg" />
               <div className="item-title">关于AG</div>
               <i className="iconfont iconallow-right" />
             </li>
           </ul>
-          <button type="submit" className="btnbase outline_btn color-blue mt-4">
+          <button
+            className="btnbase outline_btn color-blue mt-4"
+            onClick={(e) => history.push("/home")}
+          >
             登出
           </button>
           <div className="version my-2">V.1.01</div>
