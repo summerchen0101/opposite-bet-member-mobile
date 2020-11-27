@@ -19,6 +19,9 @@ const RouterProvider: React.FC = ({ children }) => {
           }
           return <Route key={i} {...rest} />;
         })}
+        <Route path="/">
+          <Redirect to="/home" />
+        </Route>
       </Switch>
       <Footer />
     </Router>
