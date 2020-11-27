@@ -31,9 +31,9 @@ const HomePage: React.FC = () => {
         {/* 公告 */}
         <div className="notice-section d-flex align-items-center">
           <i className="iconfont iconnotification" />
-          <span>
+          {/* <span>
             系统维护公告!将于11月4日 17:00系统更新，为了维护您的权益...
-          </span>
+          </span> */}
         </div>
         {/* 快速選單 */}
         <div className="middle-menu-section">

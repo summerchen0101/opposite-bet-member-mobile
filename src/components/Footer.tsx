@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           <Link to="/home">首页</Link>
         </li>
         <li className="footer-list-item history">
-          <a href="history.html">历史</a>
+          <Link to="/point-history">历史</Link>
         </li>
         <li className="footer-list-item my">
           <Link to="/user">我的</Link>
