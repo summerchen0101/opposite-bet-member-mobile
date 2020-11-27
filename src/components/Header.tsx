@@ -1,17 +1,18 @@
 import React, { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 interface HeaderProps {
-  backRoute?: string;
+  backRoute?: boolean;
   title: JSX.Element | string;
 }
 const Header: React.FC<HeaderProps> = ({ children, backRoute, title }) => {
+  const history = useHistory();
   return (
     <nav className="main_nav">
       <div className="nav-bar">
         {backRoute && (
-          <Link className="left-item" to={backRoute}>
+          <a className="left-item" onClick={(e) => history.goBack()}>
             <i className="iconfont iconallow-left"></i>
-          </Link>
+          </a>
         )}
 
         <div className="nav-title">{title}</div>

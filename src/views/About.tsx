@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const About: React.FC = () => {
   return (
     <>
-      <Header backRoute="/user" title="关于AG" />
+      <Header backRoute title="关于AG" />
       <div className="main-content">
         <div className="about-section section-padding">
           <div className="w-100 text-center py-3 mt-5">

@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const DepositRecordDetail: React.FC = () => {
   return (
     <>
-      <Header title="充值详情" backRoute="/deposit-record" />
+      <Header title="充值详情" backRoute />
       <div className="main-content">
         <div className="main-section main-section-padding">
           <div className="cash-box my-3 d-flex flex-column justify-content-center">

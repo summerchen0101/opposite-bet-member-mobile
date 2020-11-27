@@ -7,7 +7,7 @@ const DepositRecord: React.FC = () => {
   const history = useHistory();
   return (
     <>
-      <Header backRoute="deposit" title="充值记录">
+      <Header backRoute title="充值记录">
         <SButton onClick={(e) => history.push("/withdraw-record")}>
           提领记录
         </SButton>

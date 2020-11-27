@@ -8,7 +8,7 @@ const Help: React.FC = ({ children }) => {
   const history = useHistory();
   return (
     <>
-      <Header backRoute="/user" title="帮助中心" />
+      <Header backRoute title="帮助中心" />
       <div className="main-content">
         <ul className="list-group col-list section-padding">
           {categorys.map((category, i) => (

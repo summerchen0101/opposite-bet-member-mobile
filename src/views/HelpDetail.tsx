@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const HelpDetail: React.FC = () => {
   return (
     <>
-      <Header backRoute="/help" title="帮助中心" />
+      <Header backRoute title="帮助中心" />
       <div className="main-content section-padding">
         <div className="message-title w-100 my-3">如何儲值付款</div>
         <div className="message-time w-100 ">2020-09-07 02:48:36</div>
