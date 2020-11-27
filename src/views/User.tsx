@@ -96,7 +96,7 @@ const User: React.FC = () => {
           <ul className="bottom-menu-list list-group">
             <li
               className="menu-list-item"
-              // onClick="location.href = 'message.html'"
+              onClick={(e) => history.push("/messages")}
             >
               <img src="images/ic_message.svg" />
               <div className="item-title">站内信(10)</div>
