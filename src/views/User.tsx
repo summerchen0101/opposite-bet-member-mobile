@@ -1,7 +1,9 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Header from "../components/Header";
 
 const User: React.FC = () => {
+  const history = useHistory();
   return (
     <>
       <Header>我的</Header>
@@ -13,12 +15,12 @@ const User: React.FC = () => {
               <div className="avatar d-flex align-items-center justify-content-center">
                 <img src="/images/avatar.jpg" />
               </div>
-              <div className="user-info d-flex flex-column justify-content-center  ">
+              <div className="user-info d-flex flex-column justify-content-center">
                 <div className="user-id-col d-flex">
                   bet8888
                   <i
                     className="iconfont iconedit ml-2"
-                    // onClick="location.href = 'profile.html'"
+                    onClick={(e) => history.push("/profile")}
                   />
                 </div>
                 <div className="last-login-col">
@@ -102,7 +104,7 @@ const User: React.FC = () => {
             </li>
             <li
               className="menu-list-item"
-              // onClick="location.href = 'profile.html'"
+              onClick={(e) => history.push("/profile")}
             >
               <img src="images/ic_profile.svg" />
               <div className="item-title">个人资料</div>
