@@ -56,7 +56,6 @@ const User: React.FC = () => {
             </li>
             <li
               className="menu-list-item"
-              // onClick="location.href = 'recharge.html'"
               onClick={(e) => history.push("/deposit")}
             >
               <img src="images/ic_recharge.svg" />
@@ -64,7 +63,7 @@ const User: React.FC = () => {
             </li>
             <li
               className="menu-list-item"
-              // onClick="location.href = 'withdrawal.html'"
+              onClick={(e) => history.push("/withdraw")}
             >
               <img src="images/ic_withdrawal.svg" />
               立即提领
