@@ -1,0 +1,115 @@
+/* ------------------------------_buttons-------------------------- */
+.btnbase {
+    cursor: pointer;
+    width: 100%;
+    line-height: 45px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+.primary_btn {
+    outline: 0;
+    background: $primary-gradient;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+
+    &:hover {
+        color: #fff;
+        background: lighten($primary-color, 10%);
+    }
+}
+
+.nulldata_btn {
+    background: #ddd;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.outline_btn {
+    outline: 0;
+    background: transparent;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.outline_btn.color-gray {
+    color: $second-text-color;
+    border: 1px solid $base-bd;
+
+    &:hover {
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+}
+
+.outline_btn.color-blue {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+        background: $primary-color;
+        color: #fff;
+    }
+}
+
+.icon_btn {
+    border: none;
+    background-color: transparent;
+    outline: 0 !important;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+
+    &:hover {
+        outline: 0 !important;
+        border: none;
+    }
+}
+
+.icon_btn .iconfont {
+    color: $primary-color;
+    font-size: 22px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+.mini_btn {
+    background-color: transparent;
+    line-height: 20px;
+    padding: 0 10px;
+    outline: 0;
+    margin: 0;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.mini_btn.color-red {
+    background: $red-color;
+    color: #fff;
+    outline: 0;
+    &:hover {
+        background: lighten($red-color, 20%);
+    }
+}
+
+// .iconreload{
+//     @include animation(spin, 0.5s, ease-in);
+// }
