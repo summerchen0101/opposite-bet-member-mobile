@@ -9,10 +9,10 @@ const Footer: React.FC = () => {
           <a href="market.html">市场</a>
         </li>
         <li className="footer-list-item detail">
-          <a href="detail.html">明细</a>
+          <Link to="/betting-history">明细</Link>
         </li>
         <li className="footer-list-item index">
-          <a href="index.html">首页</a>
+          <Link to="/home">首页</Link>
         </li>
         <li className="footer-list-item history">
           <a href="history.html">历史</a>

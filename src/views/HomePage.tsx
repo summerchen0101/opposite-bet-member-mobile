@@ -1,5 +1,4 @@
 import React from "react";
-import Content from "../components/Content";
 import Header from "../components/Header";
 
 const HomePage: React.FC = () => {
@@ -8,7 +7,7 @@ const HomePage: React.FC = () => {
       <Header>
         <img className="logo" alt="logo" src="images/logo.png" />
       </Header>
-      <Content>
+      <div className="main-content">
         {/* 輪撥BANNER */}
         <div className="banner-section">
           <div className="swiper-container">
@@ -163,7 +162,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
-      </Content>
+      </div>
     </>
   );
 };

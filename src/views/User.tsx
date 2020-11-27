@@ -1,12 +1,11 @@
 import React from "react";
-import Content from "../components/Content";
 import Header from "../components/Header";
 
 const User: React.FC = () => {
   return (
     <>
       <Header>我的</Header>
-      <Content>
+      <div className="main-content">
         {/* 個人資訊 */}
         <div className="top-section">
           <div className="user-card">
@@ -131,7 +130,7 @@ const User: React.FC = () => {
           </button>
           <div className="version my-2">V.1.01</div>
         </div>
-      </Content>
+      </div>
     </>
   );
 };

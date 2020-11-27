@@ -7,13 +7,13 @@ import {
   RouteProps,
 } from "react-router-dom";
 import Footer from "../components/Footer";
-import { Routes } from "../lib/Routes";
+import { routes } from "../lib/routes";
 
 const RouterProvider: React.FC = ({ children }) => {
   return (
     <Router>
       <Switch>
-        {Routes.map(({ auth, ...rest }, i) => {
+        {routes.map(({ auth, ...rest }, i) => {
           if (auth) {
             return <PrivateRoute key={i} {...rest} />;
           }
@@ -27,14 +27,17 @@ const RouterProvider: React.FC = ({ children }) => {
 
 export default RouterProvider;
 
-const PrivateRoute: React.FC<RouteProps> = ({ component, ...rest }) => {
+const PrivateRoute: React.FC<RouteProps & { component: React.FC }> = ({
+  component: Component,
+  ...rest
+}) => {
   const token = sessionStorage.getItem("token");
   return (
     <Route
       {...rest}
       render={({ location }) =>
         token ? (
-          component
+          <Component />
         ) : (
           <Redirect
             to={{
