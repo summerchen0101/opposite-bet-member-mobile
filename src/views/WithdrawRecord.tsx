@@ -3,13 +3,13 @@ import { useHistory } from "react-router-dom";
 import Header from "../components/Header";
 import SButton from "../components/SButton";
 
-const DepositRecord: React.FC = () => {
+const WithdrawRecord: React.FC = () => {
   const history = useHistory();
   return (
     <>
-      <Header backRoute="deposit" title="充值记录">
-        <SButton onClick={(e) => history.push("/withdraw-record")}>
-          提领记录
+      <Header title="提领记录" backRoute="/deposit-record">
+        <SButton onClick={(e) => history.push("/deposit-record")}>
+          充值记录
         </SButton>
       </Header>
       <div className="main-content">
@@ -61,10 +61,10 @@ const DepositRecord: React.FC = () => {
                 >
                   <div className="info-col">
                     <div className="d-flex align-items-center">
-                      <div className="record-title">充值</div>
+                      <div className="record-title">提现</div>
                       <div className="time ml-2">2020-06-30 11:19</div>
                     </div>
-                    <div className="status">未付款</div>
+                    <div className="status">待处理</div>
                   </div>
                   <div>中国邮政(1223)</div>
                   <div>充值金额:100</div>
@@ -104,4 +104,4 @@ const DepositRecord: React.FC = () => {
   );
 };
 
-export default DepositRecord;
+export default WithdrawRecord;

@@ -14,6 +14,7 @@ import Deposit from "../views/Deposit";
 import DepositPayment from "../views/DepositPayment";
 import DepositRecord from "../views/DepositRecord";
 import DepositRecordDetail from "../views/DepositRecordDetail";
+import WithdrawRecord from "../views/WithdrawRecord";
 interface Route {
   path: string;
   auth?: boolean;
@@ -36,4 +37,5 @@ export const routes: Route[] = [
   { path: "/deposit-payment", component: DepositPayment },
   { path: "/deposit-record", component: DepositRecord },
   { path: "/deposit-record-detail", component: DepositRecordDetail },
+  { path: "/withdraw-record", component: WithdrawRecord },
 ];
