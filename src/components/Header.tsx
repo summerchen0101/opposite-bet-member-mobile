@@ -1,10 +1,18 @@
 import React from "react";
-
-const Header: React.FC = ({ children }) => {
+import { Link } from "react-router-dom";
+interface HeaderProps {
+  backRoute?: string;
+}
+const Header: React.FC<HeaderProps> = ({ children, backRoute }) => {
   return (
     <nav className="main_nav">
       <div className="nav-bar">
-        {/* <a class="left-item"><i class="iconfont iconallow-left"></i></a> */}
+        {backRoute && (
+          <Link className="left-item" to={backRoute}>
+            <i className="iconfont iconallow-left"></i>
+          </Link>
+        )}
+
         <div className="nav-title">{children}</div>
         {/* <div class="nav-title">市场列表</div> */}
         {/* <div class="right-item"><a class="s-btn">删除</a><a class="s-btn">取消</a></div> */}

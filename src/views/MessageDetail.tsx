@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const MessageDetail: React.FC = () => {
   return (
     <>
-      <Header>公告详情</Header>
+      <Header backRoute="/messages">公告详情</Header>
       <div className="main-content section-padding">
         <div className="message-title w-100 my-3">保本活动重要通知</div>
         <div className="message-time w-100 ">2020-09-07 02:48:36</div>

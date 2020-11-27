@@ -6,7 +6,7 @@ const Messages: React.FC = () => {
   const history = useHistory();
   return (
     <>
-      <Header>站内信</Header>
+      <Header backRoute="/user">站内信</Header>
       <div className="main-content">
         {/* 公告 */}
         <div className="notice-section d-flex align-items-center">
