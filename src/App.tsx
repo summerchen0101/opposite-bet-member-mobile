@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <nav className="main_nav">
+        <div className="nav-bar  ">
+          {/* <a class="left-item"><i class="iconfont iconallow-left"></i></a> */}
+          <div className="nav-title">
+            <img className="logo" src="images/logo.png" />
+          </div>
+          {/* <div class="nav-title">市场列表</div> */}
+          {/* <div class="right-item"><a class="s-btn">删除</a><a class="s-btn">取消</a></div> */}
+          <div className="right-item">
+            <i className="iconfont iconmessage" />
+            <span className="red-dot" />
+          </div>
+        </div>
+      </nav>
+    </>
   );
 }
 
