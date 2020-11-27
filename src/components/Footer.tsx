@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <Link to="/events">市场</Link>
         </li>
         <li className="footer-list-item detail">
-          <Link to="/betting-history">明细</Link>
+          <Link to="/betting-record">明细</Link>
         </li>
         <li className="footer-list-item index">
           <Link to="/home">首页</Link>
