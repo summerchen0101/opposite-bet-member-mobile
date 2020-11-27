@@ -112,7 +112,7 @@ const User: React.FC = () => {
             </li>
             <li
               className="menu-list-item"
-              // onClick="location.href = 'help.html'"
+              onClick={(e) => history.push("/help")}
             >
               <img src="images/ic_help.svg" />
               <div className="item-title">帮助中心</div>

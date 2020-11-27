@@ -7,6 +7,8 @@ import Profile from "../views/Profile";
 import User from "../views/User";
 import Messages from "../views/Messages";
 import MessageDetail from "../views/MessageDetail";
+import Help from "../views/Help";
+import HelpDetail from "../views/HelpDetail";
 interface Route {
   path: string;
   auth?: boolean;
@@ -22,4 +24,6 @@ export const routes: Route[] = [
   { path: "/point-history", component: PointHistory },
   { path: "/messages", component: Messages },
   { path: "/message-detail", component: MessageDetail },
+  { path: "/help", component: Help },
+  { path: "/help-detail", component: HelpDetail },
 ];
