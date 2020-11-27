@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
     <div className="footer">
       <ul className="footer-list">
         <li className="footer-list-item market">
-          <a href="market.html">市场</a>
+          <Link to="/events">市场</Link>
         </li>
         <li className="footer-list-item detail">
           <Link to="/betting-history">明细</Link>
